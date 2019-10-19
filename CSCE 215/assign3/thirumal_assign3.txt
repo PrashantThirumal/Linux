@@ -1,0 +1,22 @@
+thirumal
+cocsce-l1d39-17
+04-02-2018 - 05:09:46 PM
+
+Part 1.
+1.)
+cut -d ',' -f14 polls.csv
+2.)
+cut -d ',' -f14 polls.csv | sort | uniq | wc -l
+
+Part 2/
+1.)
+tr A-Z a-z < /usr/local/tmp/csce215/Words
+2.)
+cat /usr/local/tmp/csce215/Words| tr 'A-Z' 'a-z'| sed 'n;d;' >words
+3.)
+grep "^......$" words|  wc -l
+4.)
+grep "^[a,c]...$" words| wc -l
+5.)
+grep -E '[^a,e,i,o,u]{6}' words > $HOME/words
+

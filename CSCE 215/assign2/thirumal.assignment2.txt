@@ -1,0 +1,21 @@
+thirumal
+cocsce-l1d39-09
+03-26-2018 - 05:19:45 PM
+
+#Question 1:
+find /usr/local/tmp/csce215/election2008 -name *.csv
+
+#Question 2:
+find /usr/local/tmp/csce215/election2008/Jul -name *.csv
+
+#Question 3:
+find /usr/local/tmp/csce215/election2008 -name Aug0[1-9].csv
+
+#Question 4:
+find /usr/local/tmp/csce215/election2008 -name Aug0[1-9].csv -o -name Jul0[1-9].csv
+
+#Question 5:
+find /usr/local/tmp/csce215/election2008 -name Aug0[1-9].csv -o -name Jul*.csv -o -name Jun*.csv -o -name May*.csv -o -name Apr*.csv -o -name Mar*.csv -o -name Feb*.csv -o -name Jan*.csv
+
+#Question 6:
+find -name "*.csv" -exec ./extractdata "{}" ";"
